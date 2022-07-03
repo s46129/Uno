@@ -1,0 +1,6 @@
+/Users/wowwow/Documents/GitHub/Uno/Uno/Uno/bin/Debug/Uno.exe
+/Users/wowwow/Documents/GitHub/Uno/Uno/Uno/bin/Debug/Uno.pdb
+/Users/wowwow/Documents/GitHub/Uno/Uno/Uno/obj/Debug/Uno.csprojAssemblyReference.cache
+/Users/wowwow/Documents/GitHub/Uno/Uno/Uno/obj/Debug/Uno.csproj.CoreCompileInputs.cache
+/Users/wowwow/Documents/GitHub/Uno/Uno/Uno/obj/Debug/Uno.exe
+/Users/wowwow/Documents/GitHub/Uno/Uno/Uno/obj/Debug/Uno.pdb

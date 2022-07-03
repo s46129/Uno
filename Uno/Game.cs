@@ -44,6 +44,7 @@ namespace Uno
 
         private void TakesATurn(Player player)
         {
+            Console.WriteLine($"Current Card on desktop:{TopCard}");
             if (IsPlayerHasCard(player))
             {
                 if (VerifyCard(player.SelectCard()) == false)
@@ -59,13 +60,14 @@ namespace Uno
             }
             else
             {
+                Console.WriteLine($"{player.Name} don't have valid card.\nAdd card from Deck.");
                 player.Hand.Cards.Add(Deck.DrawCard());
             }
         }
 
         private bool VerifyCard(Card showCard)
         {
-            return showCard.Color == _desktop[0].Color || showCard.Rank > _desktop[0].Rank;
+            return showCard.Color == _desktop[0].Color || showCard.Rank == _desktop[0].Rank;
         }
 
         private void StartRound()
@@ -78,7 +80,7 @@ namespace Uno
             {
                 CheckDeckHasCard();
                 TakesATurn(_currentPlayer);
-                if (CheckWinner(_currentPlayer)) return;
+                if (CheckWinner(_currentPlayer)) break;
                 _currentPlayer = Next(ref index);
             }
 

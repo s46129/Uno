@@ -1,4 +1,5 @@
 ﻿using System.Xml;
+using Uno.PlayerType;
 
 namespace Uno
 {

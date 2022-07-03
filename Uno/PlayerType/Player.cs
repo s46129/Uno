@@ -6,13 +6,13 @@ namespace Uno
 
         public Hand Hand = new Hand();
 
-        protected Card SelectedCard;
+        protected Card _selectedCard;
         public abstract void NameHimSelf();
 
-        public Card ShowCard()  
+        public Card ShowCard()
         {
-            Hand.Cards.Remove(SelectedCard);
-            return SelectedCard;
+            Hand.Cards.Remove(_selectedCard);
+            return _selectedCard;
         }
 
         public abstract Card SelectCard();
